@@ -1,0 +1,172 @@
+.browse-by-section-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(1.125rem, 0.574rem + 2.715vw, 1.875rem);
+}
+.browse-by-section-container > h1 {
+  text-align: center;
+  margin: 0.65em 0em;
+  font-size: clamp(2rem, 1.265rem + 3.62vw, 3rem);
+}
+.items-container {
+  margin: 1em 0em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.first-conatiner {
+  display: flex;
+  flex-direction: column;
+}
+.second-conatiner {
+  display: flex;
+  flex-direction: column;
+}
+.common-type {
+  transition: 0.5s;
+  margin: 0.5em 0em;
+  border-radius: 1.5em;
+  background-size: cover;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.466);
+  aspect-ratio: 310/190;
+}
+.casual-container {
+  background-image: url("../../Images/casual-bg.png");
+}
+.formal-container {
+  background-image: url("../../Images/formal-bg.png");
+  background-position-x: clamp(6.25rem, 1.736rem + 22.222vw, 8.125rem);
+  /* background-position-x: 130px; */
+}
+.party-container {
+  background-position-x: 40px;
+  background-image: url("../../Images/party-bg.png");
+}
+.gym-container {
+  background-image: url("../../Images/gym-bg.png");
+  background-position-x: clamp(8.125rem, 0.602rem + 37.037vw, 11.25rem);
+  /* background-position-x: 180px; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.common-type:hover {
+  cursor: pointer;
+  scale: 1.12;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.466);
+  filter: brightness(0.9) contrast(1.1) saturate(1.2);
+}
+.common-type > p {
+  letter-spacing: 0.05em;
+  /* font-size: 18px;
+  padding: 18px; */
+  font-size: clamp(1.125rem, 0.523rem + 2.963vw, 1.375rem);
+  padding: clamp(1.125rem, -1.132rem + 11.111vw, 2.063rem)
+    clamp(1.125rem, -2.787rem + 19.259vw, 2.75rem);
+  font-weight: bold;
+}
+.items-container {
+  width: 100%;
+}
+@media (min-width: 461px) {
+  .first-conatiner {
+    flex-direction: row;
+  }
+  .second-conatiner {
+    flex-direction: row;
+  }
+  .common-type {
+    text-decoration: none;
+    color: black;
+    margin: 0.5em 0.5em;
+  }
+  .common-type > p {
+    /* font-size: 18px; */
+    font-size: clamp(1.125rem, 0.75rem + 1.303vw, 1.375rem);
+    /* padding: 18px; */
+    padding: clamp(1.125rem, -0.28rem + 4.886vw, 2.063rem)
+      clamp(1.125rem, -1.31rem + 8.469vw, 2.75rem);
+  }
+  .casual-container {
+  }
+  .formal-container {
+    /* background-position-x: 70px; */
+    background-position-x: clamp(4.375rem, 0.629rem + 13.029vw, 6.875rem);
+  }
+  .party-container {
+    background-position-x: 30px;
+  }
+  .gym-container {
+    /* background-position-x: 95px; */
+    background-position-x: clamp(5.938rem, 0.787rem + 17.915vw, 9.375rem);
+  }
+}
+@media (min-width: 768px) {
+  .browse-by-section-container > h1 {
+    /* font-size: 72px; */
+    font-size: clamp(2rem, 1.375rem + 1.302vw, 4.5rem);
+  }
+  .common-type > p {
+    padding: 22px;
+  }
+  .common-type {
+    max-height: 300px;
+  }
+  .casual-container {
+    width: 33%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+  .formal-container {
+    width: 66%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position-x: 150px; */
+    background-position-x: right;
+  }
+  .party-container {
+    width: 66%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position-x: 80px; */
+    background-position-x: right;
+  }
+  .gym-container {
+    width: 33%;
+    /* background-position-x: 30px; */
+    background-position-x: right;
+  }
+}
+@media (min-width: 1280px) {
+  .common-type {
+    width: 50%;
+  }
+  .common-type > p {
+    font-size: clamp(1.375rem, -0.181rem + 1.944vw, 2.25rem);
+    padding: clamp(1.375rem, -1.069rem + 3.056vw, 2.75rem)
+      clamp(1.375rem, -3.514rem + 6.111vw, 4.125rem);
+    /* font-size: 36px;
+    padding: 72px 108px; */
+  }
+  .formal-container {
+    /* background-position-x: 100px; */
+    background-position-x: clamp(6.25rem, -27.083rem + 41.667vw, 25rem);
+  }
+  .first-conatiner {
+    width: 50%;
+  }
+  .second-conatiner {
+    width: 50%;
+  }
+  .items-container {
+    width: 100%;
+    flex-direction: row;
+    max-width: 3000px;
+  }
+  .casual-container {
+    background-size: contain;
+    background-position-y: bottom;
+  }
+}

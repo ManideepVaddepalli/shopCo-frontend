@@ -1,0 +1,315 @@
+.total-products-filter-component {
+  display: flex;
+  padding: clamp(1.125rem, 0.574rem + 2.715vw, 1.875rem);
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1em 1em 0 0;
+}
+.products-filter-heading-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.products-filter-heading-component > h3 {
+  font-size: 22px;
+}
+.products-filter-heading-component > button {
+  aspect-ratio: 1/1;
+  height: 24px;
+  border-radius: 0.25em;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.products-filter-heading-component > button > span {
+  width: 18px;
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  display: block;
+  border-radius: 5em;
+  transition: transform 0.4s, color 0.4s;
+  pointer-events: none;
+}
+.cross-mark-filter-one {
+  transform: rotate(45deg);
+}
+.cross-mark-filter-two {
+  transform: rotate(-45deg);
+}
+.products-filter-heading-component > button:hover {
+  background-color: black;
+}
+.products-filter-heading-component > button:hover > .cross-mark-filter-one {
+  transform: rotate(405deg);
+  background-color: white;
+}
+.products-filter-heading-component > button:hover > .cross-mark-filter-two {
+  transform: rotate(315deg);
+  background-color: white;
+}
+.products-filter-heading-component {
+  margin: 1em 0em;
+}
+.dress-type-filter-component {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+.dress-type-filter-component > h4 {
+  font-size: 18px;
+}
+.all-distinct-dressType-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+.single-distinct-dressType-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5em;
+}
+.input-distinct-dressType {
+  appearance: none;
+  position: absolute;
+  width: 60px;
+  opacity: 0.5;
+  cursor: pointer;
+  height: 40px;
+}
+.input-distinct-dressType:hover ~ .individual-dressType-filter {
+  background-color: black;
+  color: white;
+}
+.input-distinct-dressType:checked ~ .individual-dressType-filter {
+  letter-spacing: 0.125em;
+  background-color: black;
+  color: white;
+}
+.individual-dressType-filter {
+  transition: 0.4s;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+  border-radius: 2em;
+  font-size: 16px;
+}
+.price-filter-component {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+.price-filter-component > h4 {
+  font-size: 18px;
+}
+.price-filter-component > input {
+  margin: 1em;
+}
+.min-max-price-showing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.min-max-price-showing-container > p {
+  font-size: 16px;
+}
+.min-max-price-showing-container > p > span {
+  margin-left: 0.5em;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+.color-filter-component {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+.color-filter-component > h4 {
+  font-size: 18px;
+}
+.all-colors-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+.single-all-colors-filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+.input-all-colors-filter {
+  appearance: none;
+  position: absolute;
+  width: 60px;
+  opacity: 0.5;
+  cursor: pointer;
+  height: 40px;
+}
+.input-all-colors-filter:hover ~ .individual-sizes-container-product {
+  height: 55px;
+}
+.individual-sizes-container-product {
+  transition: 0.4s;
+  color: white;
+  aspect-ratio: 1/1;
+  height: 45px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 50%;
+  font-size: 12px;
+  letter-spacing: 0.045em;
+}
+.individual-sizes-container-product > svg {
+  width: 21px;
+  height: 16.5px;
+}
+.dress-style-filter-component {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+.dress-style-filter-component > h4 {
+  font-size: 18px;
+}
+.all-dress-style-filter-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+.single-dress-style-filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5em;
+}
+.input-all-dressStyle-filter {
+  appearance: none;
+  position: absolute;
+  width: 60px;
+  opacity: 0.5;
+  cursor: pointer;
+  height: 40px;
+}
+.input-all-dressStyle-filter:hover ~ .individual-dressStyle-container {
+  background-color: black;
+  color: white;
+}
+.input-all-dressStyle-filter:checked ~ .individual-dressStyle-container {
+  letter-spacing: 0.125em;
+  background-color: black;
+  color: white;
+}
+.individual-dressStyle-container {
+  transition: 0.4s;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+  border-radius: 2em;
+  font-size: 16px;
+}
+.gender-filter-component {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+.gender-filter-component > h4 {
+  font-size: 18px;
+}
+.all-gender-filter-comonent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+.single-gender-filter-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0.5em;
+}
+.input-all-dressStyle-filter {
+  appearance: none;
+  position: absolute;
+  width: 60px;
+  opacity: 0.5;
+  cursor: pointer;
+  height: 40px;
+}
+.input-all-dressStyle-filter:hover ~ .individual-gender-container {
+  background-color: black;
+  color: white;
+}
+.input-all-dressStyle-filter:checked ~ .individual-gender-container {
+  letter-spacing: 0.125em;
+  background-color: black;
+  color: white;
+}
+.individual-gender-container {
+  transition: 0.4s;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+  border-radius: 2em;
+  font-size: 16px;
+}
+.apply-filter-button {
+  margin-bottom: 4em;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.apply-filter-button:hover {
+  color: black;
+  background-color: white;
+}
+.sort-by-filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort-by-filter-container > h4 {
+  font-size: 18px;
+}
+.sort-by-filter-input {
+  font-size: 16px;
+  cursor: pointer;
+  width: max-content;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 2em;
+  padding: 0.25em 0.5em 0.25em 1em;
+}

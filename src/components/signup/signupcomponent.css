@@ -1,0 +1,166 @@
+.total-login-component-signup {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.image-container-bg-signup {
+  width: 100%;
+  background-image: url("../Images/Tee-10.webp");
+  background-size: cover;
+  height: 100vh;
+}
+.bottom-container-signup > p > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  padding: 0.25em 0.5em;
+  border-radius: 2em;
+  transition: 0.4s;
+}
+.bottom-container-signup > p > a:hover {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2em;
+  letter-spacing: 0.125em;
+}
+.bottom-container-signup {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+}
+.bottom-container-signup > h1 {
+  font-size: calc(clamp(1.125rem, 0.482rem + 3.167vw, 2rem) + 7px);
+  color: white;
+  text-transform: uppercase;
+}
+
+.center-container-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.411);
+  padding: 1.5em 2em;
+  border-radius: 1em;
+  backdrop-filter: blur(3px);
+}
+.center-container-signup > h2 {
+  color: black;
+  margin-bottom: 1em;
+}
+.center-container-signup > form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.error-para-signup {
+  font-size: 14px;
+  color: #dc143c;
+}
+.center-container-signup > form > input {
+  padding: 0.75em 1em;
+  outline: none;
+  margin: 0.5em 0em;
+  border: 1px solid black;
+  border-radius: 3em;
+  background-color: transparent;
+}
+.center-container-signup > form > button {
+  padding: 0.75em 1em;
+  margin: 0.5em 0em;
+  border: 1px solid black;
+  border-radius: 3em;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.center-container-signup > form > button:hover {
+  letter-spacing: 0.125em;
+  color: black;
+  background-color: transparent;
+}
+.terms-conditions-signup {
+  margin-top: 1em;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  padding: 0px 1.5em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .total-login-component-signup {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: auto;
+  }
+  .image-container-bg-signup {
+    display: flex;
+    max-width: 50%;
+    min-height: 100%;
+    background-position-x: right;
+  }
+  .bottom-container-signup {
+    position: relative;
+  }
+  .bottom-container-signup > h1 {
+    color: black;
+    margin-top: 1em;
+    font-size: clamp(1.5rem, 0.406rem + 2.279vw, 5.875rem);
+  }
+  .center-container-signup {
+    width: 100%;
+  }
+  .center-container-signup > h2 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 1em;
+  }
+  .error-para-signup {
+    font-size: 14px;
+  }
+  .center-container-signup > form > input {
+    text-align: center;
+    font-size: 14px;
+  }
+  .center-container-signup > form > button {
+    font-size: 14px;
+  }
+  .terms-conditions-signup {
+    font-size: 12px;
+  }
+  .bottom-container-signup > p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1920px) {
+  .center-container-signup > h2 {
+    font-size: clamp(1.375rem, 0.625rem + 0.625vw, 2.125rem);
+  }
+  .center-container-signup > form {
+    max-width: 50%;
+  }
+  .error-para-signup {
+    font-size: clamp(1rem, 0.25rem + 0.625vw, 1.75rem);
+  }
+  .center-container-signup > form > input {
+    font-size: clamp(1rem, 0.25rem + 0.625vw, 1.75rem);
+  }
+  .center-container-signup > form > button {
+    font-size: clamp(1rem, 0.25rem + 0.625vw, 1.75rem);
+  }
+  .terms-conditions-signup {
+    font-size: clamp(0.75rem, 0.125rem + 0.521vw, 1.375rem);
+  }
+  .bottom-container-signup > p {
+    font-size: clamp(1rem, 0.25rem + 0.625vw, 1.75rem);
+  }
+}

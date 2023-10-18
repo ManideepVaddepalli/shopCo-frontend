@@ -1,0 +1,34 @@
+.total-company-page-component {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1.125rem, 0.574rem + 2.715vw, 1.875rem);
+}
+.total-company-heading-container {
+  margin: 1em 0;
+}
+.total-company-details-container {
+  margin: 1em 0;
+}
+.inner-elements-company-page {
+  padding: 2em 1em;
+  min-height: 100vh;
+}
+.inner-elements-company-page > h3 {
+  margin: 1em 0em;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.125em;
+}
+.inner-elements-company-page > p {
+  letter-spacing: 0.1em;
+  line-height: 1.75em;
+}
+@media (min-width: 767px) {
+  .total-company-page-component {
+    padding: clamp(1.25rem, 0.625rem + 1.302vw, 3.75rem)
+      clamp(1.875rem, -0.781rem + 5.534vw, 12.5rem);
+  }
+}

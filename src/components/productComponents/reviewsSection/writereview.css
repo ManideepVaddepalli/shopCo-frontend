@@ -1,0 +1,88 @@
+.write-product-review-conatiner {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  backdrop-filter: blur(3px);
+  min-height: 100vh;
+  display: flex;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.329);
+  justify-content: center;
+  align-items: center;
+}
+.card-write-review {
+  background-color: rgba(255, 255, 255, 0.836);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.582);
+  padding: 2em;
+  border-radius: 1em;
+  backdrop-filter: blur(5px);
+  max-width: 400px;
+}
+.card-write-review > h3 {
+  text-align: center;
+}
+.select-stars-container-write-review {
+  margin: 1em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.write-review-star {
+  align-self: center;
+  width: 27.2px;
+  height: 25.6px;
+}
+.select-stars-container-write-review > input {
+  outline: none;
+  width: 60px;
+  padding: 0.5em 0.2em 0.5em 0.75em;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border-radius: 2em;
+}
+.stars-container-write-review {
+  display: flex;
+  flex-direction: row;
+}
+.write-review-rating-required {
+  width: max-content;
+  margin: 0.5em 0.5em 0.5em auto;
+  color: rgb(220, 20, 60);
+}
+.write-review-textarea {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
+  font-size: 16px;
+  width: 100%;
+  height: 150px;
+  padding: 0.5em;
+}
+.write-review-buttons-container {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.write-review-buttons-container > button {
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
+  border: 1px solid black;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.submit-button-write-review {
+  background-color: black;
+  color: white;
+}
+.close-button-write-review:hover {
+  background-color: black;
+  color: white;
+}
+.submit-button-write-review:hover {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,22 @@
+.total-cart-component {
+  padding: clamp(1.125rem, 0.574rem + 2.715vw, 1.875rem);
+}
+.total-cart-component > h1 {
+  font-size: clamp(2rem, 1.265rem + 3.62vw, 3rem);
+}
+.cards-bill-cart-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 767px) {
+  .total-cart-component {
+    padding: clamp(1.25rem, 0.625rem + 1.302vw, 3.75rem)
+      clamp(1.875rem, -0.781rem + 5.534vw, 12.5rem);
+  }
+  .total-cart-component > h1 {
+    font-size: clamp(2rem, 1.375rem + 1.302vw, 4.5rem);
+  }
+}

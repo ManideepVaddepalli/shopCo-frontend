@@ -1,0 +1,16 @@
+.mobile-filter-component {
+  position: fixed;
+  padding: 50px 0 0 0;
+  max-height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.288);
+}
+.total-shop-component-container {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.125rem, 0.574rem + 2.715vw, 1.875rem);
+}

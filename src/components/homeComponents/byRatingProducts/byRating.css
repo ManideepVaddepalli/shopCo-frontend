@@ -1,0 +1,123 @@
+:root {
+  --card-container-width: 250px;
+}
+
+.total-new-arrivals-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(1.125rem, 0.574rem + 2.715vw, 1.875rem);
+}
+.total-new-arrivals-container > h1 {
+  text-align: center;
+  margin: 0.65em 0em;
+  font-size: clamp(2rem, 1.265rem + 3.62vw, 3rem);
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.cards-container > a {
+  text-decoration: none;
+  color: black;
+}
+.card-container {
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 0.75em;
+  border-radius: 1.5em;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.466);
+  padding: 1em;
+}
+.card-container:hover {
+  scale: 1.12;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.466);
+  filter: brightness(0.9) contrast(1.1) saturate(1.2);
+}
+.image-container {
+  background-size: cover;
+  aspect-ratio: 1/1.5;
+  width: var(--card-container-width);
+  border-radius: 2em;
+}
+.image-container > img {
+  height: 100%;
+  width: 100%;
+}
+.bottom-container {
+  margin-top: 0.5em;
+  width: var(--card-container-width);
+  display: flex;
+  flex-direction: column;
+}
+.bottom-container > h4 {
+  text-align: center;
+  letter-spacing: 0.035em;
+  font-size: 16px;
+}
+.rating-container {
+  align-items: center;
+  margin: 0.5em 0em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.rating-star-png {
+  width: 18.7px;
+  height: 17.6px;
+}
+.rating-container > p {
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+.rating-container > p > span {
+  color: rgba(0, 0, 0, 0.6);
+}
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+.price-container > h3 {
+  padding: 0px 1em;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-container > h3 > span {
+  display: block;
+}
+.actual-price {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.4);
+}
+.product-disount {
+  font-weight: normal;
+  color: rgb(220, 20, 60);
+  font-size: 10px;
+}
+.total-new-arrivals-container > a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  margin-top: 1em;
+  font-size: 16px;
+  background-color: black;
+  padding: 0.5em 2em;
+  border-radius: 3em;
+  border: 1px solid black;
+  transition: 0.4s;
+}
+.total-new-arrivals-container > a:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+}

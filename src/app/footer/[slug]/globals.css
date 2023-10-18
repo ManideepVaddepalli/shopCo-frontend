@@ -11,15 +11,11 @@ html {
 *::before {
   box-sizing: inherit;
 }
-::-webkit-scrollbar {
-  width: 2px;
-}
-::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
 body {
   scroll-behavior: smooth;
   max-width: 100vw;
   overflow-x: hidden;
+}
+section {
+  scroll-behavior: smooth;
 }
