@@ -127,6 +127,7 @@ export default function Formsignup() {
     }
     setLoading(true);
     const response = await fetch(URI + "/signup", {
+      next: { revalidate: 1 },
       method: "POST",
       headers: {
         "Content-type": "application/json",

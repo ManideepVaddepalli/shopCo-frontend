@@ -1,18 +1,17 @@
 "use client";
 import "./totalcartcarditems.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuthContext } from "@/hooks/useAuthContext";
 export default function TotalCartCardItems() {
   const { state, setState } = useAuthContext();
   let [User, setUser] = useState([]);
-  if (!state) {
-    return <h3 className="error-no-user-cart">Login to View Your Cart</h3>;
-  }
+  useEffect(() => {
+    if (state?.user) {
+      setUser([...state.user.cart]);
+    }
+  }, []);
   if (!state.user) {
     return <h3 className="error-no-user-cart">Login to View Your Cart</h3>;
-  }
-  if (state.user) {
-    setUser(state.user.cart);
   }
   async function handleDeleteProduct(e) {
     let name = e.target.name.split("%");
@@ -24,6 +23,7 @@ export default function TotalCartCardItems() {
       "https://shop-co-backend-server.vercel.app/api/auth/user/removeItem";
     // const URI = "http://localhost:4000/api/auth/user/removeItem";
     const res = await fetch(URI, {
+      next: { revalidate: 1 },
       method: "POST",
       headers: {
         authorization: `Bearer ${token}`,

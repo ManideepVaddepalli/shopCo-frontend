@@ -20,9 +20,6 @@ export default function BillSection() {
   if (!state) {
     return;
   }
-  if (!state?.user) {
-    return;
-  }
   function getSubTotal(cartArray) {
     const sub = cartArray.map((elem) => {
       return elem.sizeQuantity.map((item) => {
