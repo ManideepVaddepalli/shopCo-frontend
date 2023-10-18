@@ -11,11 +11,16 @@ const satoshi = localFont({
 export default function BillSection() {
   const deliveryFee = 30;
   const { state, setState } = useAuthContext();
-  const [array, setArray] = useState([...state.user.cart]);
+  const [array, setArray] = useState([]);
   useEffect(() => {
-    setArray([...state.user.cart]);
+    if (state?.user) {
+      setArray([...state.user.cart]);
+    }
   }, [state]);
-  if (!state.user) {
+  if (!state) {
+    return;
+  }
+  if (!state?.user) {
     return;
   }
   function getSubTotal(cartArray) {

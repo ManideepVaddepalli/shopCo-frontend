@@ -4,18 +4,15 @@ import { useState } from "react";
 import { useAuthContext } from "@/hooks/useAuthContext";
 export default function TotalCartCardItems() {
   const { state, setState } = useAuthContext();
-  let [User, setUser] = useState(false);
+  let [User, setUser] = useState([]);
   if (!state) {
     return <h3 className="error-no-user-cart">Login to View Your Cart</h3>;
   }
   if (!state.user) {
     return <h3 className="error-no-user-cart">Login to View Your Cart</h3>;
   }
-  if (state?.user?.cart) {
-    setUser(state?.user?.cart);
-  }
-  if (state?.user?.cart == []) {
-    setUser([]);
+  if (state.user) {
+    setUser(state.user.cart);
   }
   async function handleDeleteProduct(e) {
     let name = e.target.name.split("%");
