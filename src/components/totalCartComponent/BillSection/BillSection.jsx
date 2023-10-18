@@ -38,7 +38,7 @@ export default function BillSection() {
       <h3>Order Summary</h3>
       <div className="subtotal-bill-section-cart">
         <p>Subtotal</p>
-        <h5>₹.{subtotal}</h5>
+        <h5>₹.{subtotal.toFixed(2)}</h5>
       </div>
       <div className="deliveryfee-bill-section-cart">
         <p>Delivery Fee</p>
@@ -46,7 +46,7 @@ export default function BillSection() {
       </div>
       <div className="total-bill-section-cart">
         <p>Total</p>
-        <h5>₹.{subtotal + deliveryFee}</h5>
+        <h5>₹.{Number(subtotal.toFixed(2)) + deliveryFee}</h5>
       </div>
       <button
         className={`${satoshi.className} checkout-cart-bill-section`}
