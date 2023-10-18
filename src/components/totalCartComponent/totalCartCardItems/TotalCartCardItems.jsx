@@ -5,11 +5,17 @@ import { useAuthContext } from "@/hooks/useAuthContext";
 export default function TotalCartCardItems() {
   const { state, setState } = useAuthContext();
   let [User, setUser] = useState(false);
-  if (state.user) {
-    setUser(state.user.cart);
+  if (!state) {
+    return <h3 className="error-no-user-cart">Login to View Your Cart</h3>;
   }
   if (!state.user) {
     return <h3 className="error-no-user-cart">Login to View Your Cart</h3>;
+  }
+  if (state?.user?.cart) {
+    setUser(state?.user?.cart);
+  }
+  if (state?.user?.cart == []) {
+    setUser([]);
   }
   async function handleDeleteProduct(e) {
     let name = e.target.name.split("%");
