@@ -4,7 +4,10 @@ import { useState } from "react";
 import { useAuthContext } from "@/hooks/useAuthContext";
 export default function TotalCartCardItems() {
   const { state, setState } = useAuthContext();
-  let [User, setUser] = useState(state.user.cart);
+  let [User, setUser] = useState(false);
+  if (state.user) {
+    setUser(state.user.cart);
+  }
   if (!state.user) {
     return <h3 className="error-no-user-cart">Login to View Your Cart</h3>;
   }
