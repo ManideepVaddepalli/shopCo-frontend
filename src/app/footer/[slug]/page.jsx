@@ -1,6 +1,5 @@
-//@ts-nocheck
 import "./company.css";
-import CompanyComponent from "@/components/companyComponent/companyComponent";
+import CompanyComponent from "@/components/companyComponent/CompanyComponent";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
